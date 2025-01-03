@@ -1,4 +1,7 @@
 // print elements in sequnctial order using recursion
+// head recusrion
+// time complexity O(n)
+// space complexity O(n)
 #include<iostream>
 
 using namespace std;

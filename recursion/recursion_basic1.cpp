@@ -1,4 +1,7 @@
 // print elements in reverse order using recursion
+// tail recusrion
+// time complexity O(n)
+// space complexity O(n)
 #include<iostream>
 
 using namespace std;
