@@ -51,3 +51,8 @@ bool lemonadeChange(vector<int>& bills) {
     }
     return true;
 }
+int main() {
+    vector<int> bills = {5, 5, 5, 10, 20};
+    cout << (lemonadeChange(bills) ? "true" : "false") << endl; // Output: true
+    return 0;
+}
