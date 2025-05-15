@@ -22,3 +22,15 @@ int removeElement(vector<int>& nums, int val) {
     }
     return index;
 }
+
+int main() {
+    vector<int> nums = {3, 2, 2, 3};
+    int val = 3;
+    int k = removeElement(nums, val);
+    cout << "Number of elements not equal to " << val << ": " << k << endl;
+    cout << "Modified array: ";
+    for (int i = 0; i < k; i++) {
+        cout << nums[i] << " ";
+    }
+    return 0;
+}
