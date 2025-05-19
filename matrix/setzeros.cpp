@@ -51,3 +51,17 @@ void setMatrixZeroes(vector<vector<int>> &matrix) {
     }
     
 }
+
+int main() {
+    vector<vector<int>> matrix = {{1, -1, 1},
+                                   {-1, 0, 1},
+                                   {1, -1, 1}};
+    setMatrixZeroes(matrix);
+    for (const auto &row : matrix) {
+        for (const auto &elem : row) {
+            cout << elem << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
