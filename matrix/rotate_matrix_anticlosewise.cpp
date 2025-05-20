@@ -13,7 +13,8 @@ using namespace std;
 // [3, 6, 9]
 // [2, 5, 8]
 // [1, 4, 7]
-
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
 
 void rotateby90(vector<vector<int>>& mat) {
     int n = mat.size();
@@ -27,4 +28,17 @@ void rotateby90(vector<vector<int>>& mat) {
             swap(mat[i][j], mat[j][i]);
         }
     }
+}
+
+int main() {
+    vector<vector<int>> mat = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    rotateby90(mat);
+    cout << "Rotated matrix is: " << endl;
+    for(int i=0;i<mat.size();i++){
+        for(int j=0;j<mat[i].size();j++){
+            cout << mat[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
 }
