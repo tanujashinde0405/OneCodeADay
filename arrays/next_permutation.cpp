@@ -11,7 +11,8 @@ using namespace std;
 // Input: arr = [2, 4, 1, 7, 5, 0]
 // Output: [2, 4, 5, 0, 1, 7]
 // Explanation: The next permutation of the given array is {2, 4, 5, 0, 1, 7}.
-
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 void nextPermutation(vector<int>& nums) {
     int n = nums.size();
@@ -36,4 +37,15 @@ void nextPermutation(vector<int>& nums) {
     }
     reverse(nums.begin()+pivot+1, nums.end());
     return;
+}
+
+int main() {
+    vector<int> arr = {2, 4, 1, 7, 5, 0};
+    nextPermutation(arr);
+    cout << "Next permutation is: ";
+    for(int i=0;i<arr.size();i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    return 0;
 }
