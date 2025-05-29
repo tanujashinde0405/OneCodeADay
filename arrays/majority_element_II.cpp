@@ -53,3 +53,16 @@ vector<int> findMajority(vector<int>& nums) {
         swap(res[0], res[1]);
     return res;
 }
+
+int main() {
+    vector<int> arr = {2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6};
+    vector<int> result = findMajority(arr);
+    
+    cout << "Majority elements: ";
+    for(int num : result) {
+        cout << num << " ";
+    }
+    cout << endl; // Output: Majority elements: 5 6
+    
+    return 0;
+}
