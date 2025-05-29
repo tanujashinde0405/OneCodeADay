@@ -11,6 +11,9 @@ using namespace std;
 // Input: arr[] = [2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6]
 // Output: [5, 6]
 // Explanation: 5 and 6 occur more n/3 times.
+// Time complexity: O(n) for the first pass to find candidates and O(n) for the second pass to count occurrences, resulting in O(n) overall.
+// Space complexity: O(1) for the candidate variables and O(k) for the result vector, where k is the number of majority elements found (at most 2).
+
 
 vector<int> findMajority(vector<int>& nums) {
     int n = nums.size();
@@ -66,3 +69,4 @@ int main() {
     
     return 0;
 }
+
