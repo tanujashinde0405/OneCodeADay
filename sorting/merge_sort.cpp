@@ -2,6 +2,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Merge Sort Algorithm
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
 void merge(vector<int> &arr, int low, int mid, int high)
 {
     vector<int> temp;
@@ -43,4 +46,16 @@ void mergeSort(vector<int> &arr, int l, int r)
     mergeSort(arr, l, mid);
     mergeSort(arr, mid + 1, r);
     merge(arr, l, mid, r);
+}
+
+int main() {
+    vector<int> arr = {6,4,3,1,5,2};
+    int n = arr.size();
+    mergeSort(arr, 0, n - 1);
+    cout << "Sorted array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
 }
